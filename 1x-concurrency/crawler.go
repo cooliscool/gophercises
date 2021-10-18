@@ -44,7 +44,6 @@ func Crawl(wg *sync.WaitGroup, url string, depth int, fetcher Fetcher) {
 	}
 	fmt.Printf("found: %s %q\n", url, body)
 	for _, u := range urls {
-		// u := u
 
 		fmt.Printf("fetching %s (parallel) \n", u)
 
